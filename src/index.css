@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        color: white;
+        background-color: #E9F3F4;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* ADICIONE ESTA LINHA: Garante que NADA force o scroll horizontal no corpo */
+        overflow-x: hidden; 
+    }
+
+    html {
+        scroll-behavior: smooth;
+        height: 100%;
+        /* A LINHA ABAIXO É DESNECESSÁRIA SE ESTIVER NO BODY, MAS PODE SER MANTIDA */
+        /* overflow-x: hidden */ 
+    }
+}
